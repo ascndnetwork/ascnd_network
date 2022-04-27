@@ -4,92 +4,66 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color: white;
 }
-
 
 
 li, a, p{
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
   text-decoration: none;
   list-style: none;
 }
 
-.parent{
+.main {
+  height: 75vh;
   display: flex;
   flex-direction: column;
-}
-
-.nav_bar {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-
+  justify-content: center;
+  align-content: center;
 }
 
-.page_content{
-  display: flex;
-  margin-top: 5%;
-  margin-left: 35%;
-}
-
-
-.np{
-  margin-right: auto;
-  padding: 20px;
-  text-transform: uppercase;
+.portal{
+  width: 150px;
+  height: 200px;
 }
 .logo{
   cursor: pointer;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
 }
-
+ 
+.title{
+  cursor: pointer;
+  width: 1008px;
+  height: 88px;
+}
 nav {
-  padding: 0px;
+  padding: 30px;
   margin: 0;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 nav li{
   display: inline-block;
-  margin-left: 70px;
-
   position: relative;
+  margin-left:20px;
 }
 
 nav li a {
   transition: all 0.3s ease 0s;
-}
+} 
 
 nav li a:hover {
   color: blue;
+} 
+
+.enter:hover{
+  color: blue;
 }
 
-.placeholder {
-  display: flex;
-  align-items:center;
-  text-align: center;
-}
 
-#twitch-embed{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 42.5px;
-  /* width:  1920px;
-  height: 1080px;
-    Delete the comments but I wanted to say:
-    it's bad to use explicit values for height and width.
-    Instead using 100% etc is more responsive and fluid */
-  width: 100%;
-  height: auto;
-  margin: 0;
-}
-
-#twitch-embed iframe {
-  width: 100%;
-  /* here we're saying to the iframe, always wrap and fit 100% of the width of the container' */
-}
